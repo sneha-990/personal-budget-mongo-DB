@@ -13,6 +13,7 @@ const budgetModel = require('./models/budget_schema')
 
 let url = 'mongodb://127.0.0.1:27017/personaldatabase';
 
+app.use('/', express.static('public'));
 app.get('/hello', (req, res) => {
     res.send('Hello World!');
 });
